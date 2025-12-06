@@ -1,0 +1,15 @@
+Setelah anda menyelesaikan kode, tolong jawab pertanyaan dibawah ini ya =
+
+
+1. Apa tujuan utama adanya interface dalam pemrograman berorientasi objek, dan bagaimana interface membantu menciptakan kontrak perilaku?
+2. Mengapa interface dapat memiliki banyak implementasi, dan apa makna konseptual dari kemampuan tersebut dalam desain sistem?
+3. Apa perbedaan mendasar antara extends dan implements dalam konteks interface, jika dilihat secara konsep tanpa melihat contoh kode?
+4. Apa alasan diperkenalkannya default method dalam interface, dan bagaimana fitur ini memengaruhi keberlangsungan (compatibility) suatu sistem yang sudah berjalan?
+5. Bagaimana konsep multiple interface memperluas fleksibilitas desain tanpa menimbulkan masalah kompleksitas yang biasa muncul pada multiple inheritance?
+
+Jawaban : 
+1.Tujuan utama interface adalah mendefinisikan kontrak perilaku yang wajib dipenuhi oleh class mana pun yang mengimplementasikannya. Interface memastikan bahwa semua class yang berbeda tetap memiliki pola perilaku yang konsisten, meskipun cara implementasinya berbeda.
+2.Interface bisa memiliki banyak implementasi karena interface hanya mendefinisikan “apa yang harus dilakukan”, bukan “bagaimana cara melakukannya”. Secara konsep, ini memberi fleksibilitas agar satu standar perilaku dapat diwujudkan oleh banyak jenis objek dengan karakteristik berbeda tanpa saling mengikat.
+3.Extends menunjukkan hubungan pewarisan sifat, yaitu mengambil karakter dan struktur dari parent. Implements menunjukkan komitmen untuk memenuhi kontrak perilaku yang ditentukan interface tanpa mewarisi implementasi. Secara konsep, extends adalah pewarisan isi, sedangkan implements adalah pemenuhan aturan.
+4.Default method diperkenalkan agar interface bisa berkembang tanpa merusak sistem lama. Dengan adanya implementasi dasar pada method default, class lama tetap berfungsi meskipun interface ditambah method baru. Hal ini menjaga kompatibilitas dan mencegah error massal pada proyek besar.
+5.Multiple interface memberi kemampuan sebuah class memiliki lebih dari satu kontrak perilaku tanpa risiko konflik pewarisan seperti pada multiple inheritance klasik. Karena interface tidak membawa state atau implementasi kompleks, class dapat bebas menggabungkan berbagai perilaku tanpa benturan struktur atau ambiguitas warisan.

@@ -1,0 +1,22 @@
+[PERTANYAAN PENGAYAAN]
+
+1. Mengapa constructor di class Member wajib memanggil constructor Customer menggunakan super(...)?
+
+2. Apa tujuan memanggil super.tampilkanInfo() saat melakukan overriding method di subclass?
+
+3. Berikan contoh kondisi di mana pemanggilan super.method() sangat penting dalam pewarisan.
+
+4. Bagaimana keyword super membantu membedakan atribut yang memiliki nama sama antara parent dan child?
+
+5. Mengapa pendekatan inheritance lebih efisien dibanding menyalin ulang seluruh atribut dan method ke dalam class Member?
+
+Jawaban : 
+1. Constructor di class Member wajib memanggil constructor Customer karena atribut dasar seperti *nama*, *id*, dan *totalBelanja* dimiliki oleh parent (Customer). Nilai-nilai tersebut hanya bisa diinisialisasi melalui constructor parent, sehingga super(...) diperlukan agar data parent terbangun dengan benar sebelum menambahkan atribut baru di subclass.
+
+2. Tujuan memanggil super.tampilkanInfo() adalah agar method versi parent tetap dijalankan sehingga informasi dasar Customer tetap tampil. Setelah itu, subclass dapat menambahkan perilaku tambahan tanpa harus menulis ulang kode yang sudah ada.
+
+3. Pemanggilan super.method() sangat penting ketika subclass ingin menambah fitur baru tanpa menghapus perilaku default parent. Contoh: method hitungGaji() di parent menghitung gaji dasar, lalu subclass Manajer memanggil super.hitungGaji() untuk mendapatkan gaji dasar dan menambahkan tunjangan.
+
+4. Keyword super digunakan untuk membedakan atribut atau method yang memiliki nama sama antara parent dan child. Jika subclass mendeklarasikan variabel dengan nama yang sama, super.namaVariabel memastikan akses ke atribut milik parent, bukan milik child.
+
+5. Inheritance lebih efisien karena subclass cukup mewarisi atribut dan method parent tanpa menyalin ulang. Ini menghindari duplikasi kode, mempermudah pemeliharaan, serta membuat struktur program lebih rapi dan mudah dikembangkan, terutama ketika ada perubahan di parent yang otomatis berlaku pada seluruh subclass.

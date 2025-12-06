@@ -1,0 +1,14 @@
+Pertanyaan Refleksi
+Setelah menyelesaikan kode, jawab pertanyaan berikut:
+
+Jelaskan perbedaan antara fungsi (function) dan prosedur (procedure) dalam pemrograman berorientasi objek.
+Mengapa penting menggunakan konstanta (final variables) dalam suatu kelas? Apa keuntungannya?
+Apa yang terjadi jika kita mencoba mengubah nilai suatu konstanta setelah objek dibuat? Berikan contoh.
+Bagaimana cara mendefinisikan konstanta dalam bahasa Java?
+
+Jawaban
+
+Fungsi adalah method yang mengembalikan nilai sehingga bisa digunakan kembali dalam perhitungan, sedangkan prosedur adalah method yang tidak mengembalikan nilai dan hanya menjalankan aksi seperti mencetak output.
+Konstanta penting karena menjaga nilai tertentu agar tidak berubah, mencegah kesalahan pemrograman, dan membuat kode lebih konsisten serta mudah dipahami.
+Jika kita mencoba mengubah nilai konstanta, program tidak bisa dikompilasi. Misalnya jika ada final double faktor = 1.2; lalu ditulis faktor = 1.5;, maka Java akan menampilkan error “cannot assign a value to final variable”.
+Konstanta didefinisikan menggunakan kata kunci final, misalnya final int MAX_UMUR = 100;.
